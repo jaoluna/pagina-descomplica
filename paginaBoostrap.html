@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="bg-primary text-white p-3">
+        <div class="container">
+            <h1 class="text-center">Pagina Boostrap</h1>
+            <nav class="nav justify-content-center">
+                <a class="nav-link text-white" href="#secao1">Intro</a>
+                <a class="nav-link text-white" href="#secao2">Desenvolvimento</a>
+                <a class="nav-link text-white" href="#secao3">Conclusão</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+
+        <section id="secao1" class="mb-5">
+            <div class="p-5 bg-light rounded-3">
+                <h2 class="text-center">Seção 1 - Introdução</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus eros aliquet velit fermentum, ut dapibus nunc feugiat. Sed eget augue eget libero tempor pretium.</p>
+            </div>
+        </section>
+
+        <section id="secao2" class="mb-5">
+            <div class="p-5 bg-secondary text-white rounded-3">
+                <h2 class="text-center">Seção 2 - Conteúdo</h2>
+                <p>Proin malesuada felis in massa feugiat, ac bibendum eros fringilla. Nunc viverra, nulla in convallis faucibus, lectus velit blandit sapien, non fermentum dui lorem eget dolor.</p>
+            </div>
+        </section>
+
+        <section id="secao3" class="mb-5">
+            <div class="p-5 bg-success text-white rounded-3">
+                <h2 class="text-center">Seção 3 - Conclusão</h2>
+                <p>Cras consequat libero ac urna tincidunt, at placerat nisl pulvinar. Phasellus ut arcu id neque feugiat ultricies. Suspendisse vel leo consequat, mollis elit a, semper risus.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; <span id="currentYear"></span> Minha Página Web. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
+
